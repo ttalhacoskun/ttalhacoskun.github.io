@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talha Coşkun Kişisel Web Site</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+    <link rel="apple-touch-icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <style>
+        .profile-pic {
+            border-radius: 50%;
+        }
+        .project-img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .about-details-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .about-containers {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .details-container {
+            margin: 0 20px;
+            text-align: center;
+        }
+    </style>
+    <!-- Google AdSense Kodu -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7658717096931763"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Talha Coşkun</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Talha Coşkun</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="assets/profile-pic.png" alt="Talha Coşkun profile picture" class="profile-pic" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Talha Coşkun</h1>
+            <p class="section__text__p2">Mobile Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('assets/Talha coşkun (en).pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/talha-coşkun-a54647214/'" />
+                <img src="assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/ttalhacoskun'" />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>2+ years <br />Mobile Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>Ataşehir Adıgüzel MYO - (Associate Degree)</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I am an experienced mobile application developer with over three years of expertise in Swift and SwiftUI, and one year in Flutter. Throughout my career, I have focused on creating innovative, user-friendly solutions that not only meet but exceed user expectations. My deep understanding of mobile development, combined with my creative problem-solving skills, enables me to design and implement applications that are both functional and aesthetically pleasing.
+
+                        My journey in mobile development began with a passion for technology and a desire to create impactful digital experiences. Over the years, I have honed my skills in Swift and SwiftUI, mastering the art of building seamless, high-performance applications for iOS. My transition to Flutter has expanded my capabilities, allowing me to develop cross-platform solutions that cater to a wider audience.
+                        
+                        As a developer, I am always eager to learn and embrace new technologies. This continuous learning approach keeps me at the forefront of the industry, enabling me to leverage the latest tools and frameworks to deliver cutting-edge solutions. I take pride in my ability to adapt to new challenges and find creative solutions to complex problems.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Mobile Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Swift</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>SwiftUI</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Flutter</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Dart</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Python</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>C#</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>C</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>TypeScript</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>MySQL</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>MSSQL</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Firebase</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Git/Github</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>MVVM</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>RESTful API Integration</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Docker</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Hive</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Shared Preferences</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Unit Testing</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>UI Testing</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Xcode</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Android Studio</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Linux</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Microsoft Office</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Trello (Project Management)</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="assets/project-1.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Namaz Vakti + İmsakiye 2024</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ttalhacoskun/Namaz-Vakti-imsakiye-2024'">Github</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="assets/project-2.png" alt="Project 2" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">New Direction Finder (3.0)</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ttalhacoskun/NewDirectionFinder3.0'">Github</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="assets/project-3.png" alt="Project 3" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Flappy Bird App</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ttalhacoskun/FlappyBirdApp'">Github</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="assets/project-4.png" alt="Project 4" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">TicTacToe</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ttalhacoskun/TicTacToe'">Github</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="assets//email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:ttalhacoskun@gmail.com">ttalhacoskun@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/in/talha-coşkun-a54647214/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google AdSense Reklam Birimi -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-7658717096931763"
+         data-ad-slot="1234567890"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Talha Coşkun. All Rights Reserved.</p>
+    </footer>
+    <script src="https://ttalhacoskun.com.tr/script.js"></script>
+    <script>
+        // Save the scroll position in localStorage
+        window.addEventListener('scroll', function() {
+            localStorage.setItem('scrollPosition', window.scrollY);
+        });
+
+        // Restore the scroll position from localStorage
+        window.addEventListener('load', function() {
+            if (localStorage.getItem('scrollPosition') !== null) {
+                window.scrollTo(0, localStorage.getItem('scrollPosition'));
+            }
+        });
+    </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7658717096931763"
+     crossorigin="anonymous"></script>
+    <!-- banner -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-7658717096931763"
+         data-ad-slot="7962087512"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script> 
+</body>
+</html>
