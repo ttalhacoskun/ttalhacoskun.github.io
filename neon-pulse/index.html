@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Neon Pulse — Cyber Survivor | 60 FPS Neon Roguelite for iOS &amp; Android</title>
+  <meta name="np-title-en" content="Neon Pulse — Cyber Survivor | 60 FPS Neon Roguelite for iOS &amp; Android" />
+  <meta name="np-title-tr" content="Neon Pulse — Cyber Survivor | iOS ve Android için 60 FPS Neon Roguelite" />
+  <meta name="description" content="Neon Pulse — Cyber Survivor is a 60 FPS neon-geometric roguelite action game with one-finger controls, 4 ship classes, real-time 1v1 duels, 2-player co-op and weekly global tournaments." />
+  <link rel="canonical" href="https://ttalhacoskun.com.tr/neon-pulse/" />
+  <link rel="alternate" hreflang="en" href="https://ttalhacoskun.com.tr/neon-pulse/" />
+  <link rel="alternate" hreflang="tr" href="https://ttalhacoskun.com.tr/neon-pulse/?lang=tr" />
+  <link rel="alternate" hreflang="x-default" href="https://ttalhacoskun.com.tr/neon-pulse/" />
+  <meta name="theme-color" content="#070710" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Neon Pulse — Cyber Survivor" />
+  <meta property="og:title" content="Neon Pulse — Cyber Survivor" />
+  <meta property="og:description" content="60 FPS neon-geometric roguelite action. One finger. Four ships. Real-time duels, co-op and weekly tournaments." />
+  <meta property="og:url" content="https://ttalhacoskun.com.tr/neon-pulse/" />
+  <meta property="og:image" content="https://ttalhacoskun.com.tr/assets/neon-pulse/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Neon Pulse — Cyber Survivor emblem on a dark neon grid" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Neon Pulse — Cyber Survivor" />
+  <meta name="twitter:description" content="60 FPS neon-geometric roguelite action for iOS &amp; Android." />
+  <meta name="twitter:image" content="https://ttalhacoskun.com.tr/assets/neon-pulse/og.png" />
+  <link rel="icon" href="/assets/neon-pulse/emblem.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/assets/favicon_io/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/neon-pulse/np.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["VideoGame", "MobileApplication"],
+    "name": "Neon Pulse — Cyber Survivor",
+    "description": "60 FPS neon-geometric roguelite action game with one-finger controls, 4 ship classes, real-time 1v1 duels, 2-player co-op and weekly global tournaments.",
+    "url": "https://ttalhacoskun.com.tr/neon-pulse/",
+    "image": "https://ttalhacoskun.com.tr/assets/neon-pulse/og.png",
+    "applicationCategory": "GameApplication",
+    "genre": ["Action", "Roguelite", "Arcade"],
+    "operatingSystem": "iOS, Android",
+    "playMode": ["SinglePlayer", "MultiPlayer", "CoOp"],
+    "author": { "@type": "Person", "name": "Talha Coşkun", "url": "https://ttalhacoskun.com.tr/" },
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+  <style>
+    .np-hero { padding: clamp(48px, 8vw, 96px) 0 clamp(48px, 7vw, 80px); }
+    .np-hero-grid { display: grid; grid-template-columns: 1.25fr 1fr; gap: clamp(28px, 5vw, 64px); align-items: center; }
+    .np-hero h1 { font-family: var(--font-display); font-size: clamp(2.6rem, 7vw, 4.6rem); line-height: 1; letter-spacing: -0.04em; }
+    .np-hero h1 span { display: block; background: linear-gradient(90deg, var(--np-cyan), var(--np-magenta)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .np-hero .lead { margin-top: 18px; font-size: 1.15rem; color: var(--np-text-2); max-width: 540px; }
+    .np-hero .stores { margin-top: 28px; }
+    .np-hero .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .np-emblem { justify-self: center; width: min(100%, 380px); filter: drop-shadow(0 30px 70px rgba(0, 240, 255, 0.35)) drop-shadow(0 10px 40px rgba(255, 43, 214, 0.25)); }
+    .np-section { padding: clamp(40px, 6vw, 72px) 0; }
+    .np-section h2 { font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 2.4rem); letter-spacing: -0.03em; line-height: 1.15; margin-bottom: 8px; }
+    .np-section .sub { color: var(--np-text-2); margin-bottom: 28px; max-width: 620px; }
+    .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .feature { padding: 22px; border-radius: var(--np-radius); border: 1px solid var(--np-line); background: linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.01)); transition: transform 220ms var(--ease), border-color 220ms, box-shadow 220ms; }
+    .feature:hover { transform: translateY(-4px); border-color: var(--np-line-strong); box-shadow: 0 20px 50px -24px rgba(0, 240, 255, 0.45); }
+    .feature .ico { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 12px; background: rgba(0, 240, 255, 0.08); border: 1px solid rgba(0, 240, 255, 0.3); color: var(--np-cyan); margin-bottom: 14px; }
+    .feature:nth-child(even) .ico { background: rgba(255, 43, 214, 0.08); border-color: rgba(255, 43, 214, 0.35); color: var(--np-magenta); }
+    .feature .ico svg { width: 22px; height: 22px; }
+    .feature h3 { font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 4px; }
+    .feature p { color: var(--np-text-2); font-size: 0.95rem; }
+    .ships { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+    .ship { text-align: center; padding: 22px 12px; border-radius: var(--np-radius); border: 1px solid var(--np-line); background: rgba(255,255,255,0.02); transition: transform 220ms var(--ease), border-color 220ms; }
+    .ship:hover { transform: translateY(-4px); border-color: var(--np-line-strong); }
+    .ship svg { width: 64px; height: 64px; margin: 0 auto 12px; filter: drop-shadow(0 0 10px currentColor); }
+    .ship strong { font-family: var(--font-display); font-size: 1.05rem; letter-spacing: 0.04em; }
+    .legal-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .legal-card { display: block; padding: 20px 22px; border-radius: var(--np-radius); border: 1px solid var(--np-line); background: rgba(255,255,255,0.02); color: var(--np-text); text-decoration: none; transition: transform 200ms var(--ease), border-color 200ms; }
+    .legal-card:hover { color: var(--np-text); transform: translateY(-3px); border-color: var(--np-cyan); }
+    .legal-card strong { display: block; font-family: var(--font-display); font-size: 1.1rem; }
+    .legal-card span { color: var(--np-text-3); font-size: 0.92rem; }
+    @media (max-width: 880px) {
+      .np-hero-grid { grid-template-columns: 1fr; text-align: center; }
+      .np-emblem { order: -1; width: min(60vw, 240px); }
+      .np-hero .lead { margin-left: auto; margin-right: auto; }
+      .np-hero .stores, .np-hero .actions { justify-content: center; }
+      .feature-grid, .legal-grid { grid-template-columns: 1fr 1fr; }
+      .ships { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 560px) {
+      .feature-grid, .legal-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="np-bar">
+    <div class="wrap">
+      <a class="back-link" href="/#projects"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5m6 6-6-6 6-6"/></svg><span class="label">ttalhacoskun.com.tr</span></a>
+      <div class="np-bar-right">
+        <nav class="lang-switch" aria-label="Language / Dil">
+          <a href="?lang=en" data-set-lang="en" hreflang="en" lang="en" aria-current="true">EN</a>
+          <a href="?lang=tr" data-set-lang="tr" hreflang="tr" lang="tr" aria-current="false">TR</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Shared inline icon set -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <symbol id="i-finger" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 11V5a2 2 0 1 1 4 0v6m0-1a2 2 0 1 1 4 0v3m-4-2v0m4 0a2 2 0 1 1 4 0v3a8 8 0 0 1-8 8h-1a7 7 0 0 1-5.7-2.9L4 15a2 2 0 0 1 3.2-2.4L9 15"/></symbol>
+      <symbol id="i-ship" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 2 20 21l-8-4-8 4L12 2Z"/></symbol>
+      <symbol id="i-cards" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="6" width="11" height="15" rx="2"/><path d="M8 3h9a2 2 0 0 1 2 2v13"/></g></symbol>
+      <symbol id="i-duel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14.5 17.5 3 6V3h3l11.5 11.5M13 19l6-6M16 16l4 4M19 21l2-2M9.5 17.5 21 6V3h-3L6.5 14.5M11 19l-6-6M8 16l-4 4M5 21l-2-2"/></symbol>
+      <symbol id="i-trophy" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4ZM7 6H4v1a4 4 0 0 0 4 4M17 6h3v1a4 4 0 0 1-4 4"/></symbol>
+      <symbol id="i-wave" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M2 12h3l2-6 4 12 3-9 2 3h6"/></symbol>
+    </svg>
+
+    <section class="np-hero">
+      <div class="wrap np-hero-grid">
+        <div>
+          <span class="kicker">iOS · Android · 60 FPS</span>
+          <h1>Neon Pulse <span>Cyber Survivor</span></h1>
+          <p class="lead" data-lang="en" lang="en">A 60 FPS neon-geometric roguelite action game. Steer with one finger, level up with skill cards, and survive the swarm — solo, in real-time duels, or in co-op.</p>
+          <p class="lead" data-lang="tr" lang="tr" hidden>60 FPS neon-geometrik roguelite aksiyon oyunu. Tek parmakla yönlendir, yetenek kartlarıyla güçlen ve sürüye karşı hayatta kal — tek başına, gerçek zamanlı düellolarda veya ortak operasyonda.</p>
+          <div class="stores" aria-label="Store availability">
+            <div class="store-badge">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.77-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.83-.81-3-.79-1.55.02-2.97.9-3.77 2.28-1.6 2.79-.41 6.92 1.15 9.18.76 1.11 1.67 2.35 2.86 2.31 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.13 2.77-2.24.87-1.28 1.23-2.53 1.25-2.59-.03-.01-2.4-.92-2.42-3.66ZM14.1 5.86c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.61-2.67 1.37-.58.67-1.1 1.76-.96 2.8 1.02.08 2.06-.52 2.69-1.28Z"/></svg>
+              <div><small data-lang="en">Coming soon</small><small data-lang="tr" hidden>Yakında</small><span>App Store</span></div>
+            </div>
+            <div class="store-badge">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#00f0ff" d="M3.6 1.6c-.25.27-.4.68-.4 1.2v18.4c0 .52.15.93.4 1.2L13.9 12 3.6 1.6Z"/><path fill="#ff2bd6" d="M17.3 15.4 13.9 12 3.6 22.4c.38.4 1 .45 1.7.05l12-7.05Z"/><path fill="#b316ff" d="M17.3 8.6 5.3 1.55c-.7-.4-1.32-.35-1.7.05L13.9 12l3.4-3.4Z"/><path fill="#ffffff" d="m21.1 10.8-3.8-2.2-3.4 3.4 3.4 3.4 3.8-2.2c1.1-.63 1.1-1.77 0-2.4Z"/></svg>
+              <div><small data-lang="en">Coming soon</small><small data-lang="tr" hidden>Yakında</small><span>Google Play</span></div>
+            </div>
+          </div>
+          <div class="actions">
+            <a class="btn btn-neon" href="#features"><span data-lang="en">Explore features</span><span data-lang="tr" hidden>Özellikleri keşfet</span></a>
+            <a class="btn btn-line" href="/neon-pulse/support/"><span data-lang="en">Support</span><span data-lang="tr" hidden>Destek</span></a>
+          </div>
+        </div>
+        <img class="np-emblem" src="/assets/neon-pulse/emblem.svg" alt="Neon Pulse emblem" width="380" height="380" />
+      </div>
+    </section>
+
+    <section class="np-section" id="features">
+      <div class="wrap">
+        <h2 data-lang="en">Built for flow</h2>
+        <h2 data-lang="tr" hidden>Akış için tasarlandı</h2>
+        <p class="sub" data-lang="en">Fast, readable, neon-drenched action that runs at a smooth 60 frames per second.</p>
+        <p class="sub" data-lang="tr" hidden>Saniyede 60 kare akıcılıkta çalışan, hızlı, okunaklı ve neon dolu aksiyon.</p>
+        <div class="feature-grid">
+          <div class="feature">
+            <div class="ico"><svg aria-hidden="true"><use href="#i-finger"/></svg></div>
+            <h3 data-lang="en">One-finger control</h3><h3 data-lang="tr" hidden>Tek parmakla kontrol</h3>
+            <p data-lang="en">Smooth, precise steering designed for one-handed play anywhere.</p>
+            <p data-lang="tr" hidden>Her yerde tek elle oynamak için akıcı ve hassas yönlendirme.</p>
+          </div>
+          <div class="feature">
+            <div class="ico"><svg aria-hidden="true"><use href="#i-cards"/></svg></div>
+            <h3 data-lang="en">Roguelite level-ups</h3><h3 data-lang="tr" hidden>Roguelite seviye atlama</h3>
+            <p data-lang="en">Pick skill cards as you level up and build a different run every time.</p>
+            <p data-lang="tr" hidden>Seviye atladıkça yetenek kartları seç, her oyunda farklı bir yapı kur.</p>
+          </div>
+          <div class="feature">
+            <div class="ico"><svg aria-hidden="true"><use href="#i-ship"/></svg></div>
+            <h3 data-lang="en">4 ship classes</h3><h3 data-lang="tr" hidden>4 gemi sınıfı</h3>
+            <p data-lang="en">Vanguard, Bastion, Phantom and Inferno — each with its own playstyle.</p>
+            <p data-lang="tr" hidden>Vanguard, Bastion, Phantom ve Inferno — her biri kendine özgü oynanışa sahip.</p>
+          </div>
+          <div class="feature">
+            <div class="ico"><svg aria-hidden="true"><use href="#i-duel"/></svg></div>
+            <h3 data-lang="en">Real-time online modes</h3><h3 data-lang="tr" hidden>Gerçek zamanlı çevrimiçi modlar</h3>
+            <p data-lang="en">1v1 Cyber Duel and 2-player Co-op Operation, matched live online.</p>
+            <p data-lang="tr" hidden>Canlı eşleşmeyle 1v1 Siber Düello ve 2 Kişilik Ortak Operasyon.</p>
+          </div>
+          <div class="feature">
+            <div class="ico"><svg aria-hidden="true"><use href="#i-trophy"/></svg></div>
+            <h3 data-lang="en">Weekly global tournaments</h3><h3 data-lang="tr" hidden>Haftalık küresel turnuvalar</h3>
+            <p data-lang="en">Climb worldwide leaderboards and chase achievements every week.</p>
+            <p data-lang="tr" hidden>Her hafta dünya çapındaki liderlik tablolarında yüksel ve başarımların peşine düş.</p>
+          </div>
+          <div class="feature">
+            <div class="ico"><svg aria-hidden="true"><use href="#i-wave"/></svg></div>
+            <h3 data-lang="en">Code-synthesized synthwave</h3><h3 data-lang="tr" hidden>Kodla sentezlenen synthwave</h3>
+            <p data-lang="en">Music and sound effects generated in code for a pure retro-future vibe.</p>
+            <p data-lang="tr" hidden>Saf retro-fütüristik atmosfer için kodla üretilen müzik ve ses efektleri.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="np-section" id="ships">
+      <div class="wrap">
+        <h2 data-lang="en">Choose your ship</h2>
+        <h2 data-lang="tr" hidden>Gemini seç</h2>
+        <p class="sub" data-lang="en">Four unique classes. Unlock cosmetic skins to make yours stand out.</p>
+        <p class="sub" data-lang="tr" hidden>Dört benzersiz sınıf. Gemini öne çıkarmak için kozmetik görünümlerin kilidini aç.</p>
+        <div class="ships">
+          <div class="ship" style="color:#00f0ff">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6 54 56 32 46 10 56Z" fill="currentColor" fill-opacity=".12" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/></svg>
+            <strong>VANGUARD</strong>
+          </div>
+          <div class="ship" style="color:#7c8cff">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6 54 18v28L32 58 10 46V18Z" fill="currentColor" fill-opacity=".12" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/><path d="M32 20 42 26v12L32 44 22 38V26Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg>
+            <strong>BASTION</strong>
+          </div>
+          <div class="ship" style="color:#b316ff">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6 46 40 32 58 18 40Z" fill="currentColor" fill-opacity=".12" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/><path d="M8 34h10M46 34h10" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+            <strong>PHANTOM</strong>
+          </div>
+          <div class="ship" style="color:#ff2bd6">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6 50 42 40 38 32 58 24 38 14 42Z" fill="currentColor" fill-opacity=".12" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/></svg>
+            <strong>INFERNO</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="np-section" id="legal">
+      <div class="wrap">
+        <h2 data-lang="en">Privacy, terms &amp; support</h2>
+        <h2 data-lang="tr" hidden>Gizlilik, koşullar ve destek</h2>
+        <p class="sub" data-lang="en">Neon Pulse shows rewarded ads only when you choose, never sells your data, and lets you delete your account at any time.</p>
+        <p class="sub" data-lang="tr" hidden>Neon Pulse ödüllü reklamları yalnızca siz seçtiğinizde gösterir, verilerinizi asla satmaz ve hesabınızı dilediğiniz zaman silmenize olanak tanır.</p>
+        <div class="legal-grid">
+          <a class="legal-card" href="/neon-pulse/privacy/">
+            <strong data-lang="en">Privacy Policy</strong><strong data-lang="tr" hidden>Gizlilik Politikası</strong>
+            <span data-lang="en">What we collect and why</span><span data-lang="tr" hidden>Ne topluyoruz ve neden</span>
+          </a>
+          <a class="legal-card" href="/neon-pulse/terms/">
+            <strong data-lang="en">Terms of Use</strong><strong data-lang="tr" hidden>Kullanım Koşulları</strong>
+            <span data-lang="en">Fair play, purchases &amp; refunds</span><span data-lang="tr" hidden>Adil oyun, satın alımlar ve iadeler</span>
+          </a>
+          <a class="legal-card" href="/neon-pulse/support/">
+            <strong data-lang="en">Support</strong><strong data-lang="tr" hidden>Destek</strong>
+            <span>devsupport.tc@gmail.com</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="np-footer">
+    <div class="wrap">
+      <p>© <span data-year>2026</span> Talha Coşkun · Neon Pulse — Cyber Survivor</p>
+      <nav aria-label="Neon Pulse">
+        <ul>
+          <li><a href="/neon-pulse/" aria-current="page">Neon Pulse</a></li>
+          <li><a href="/neon-pulse/privacy/">Privacy / Gizlilik</a></li>
+          <li><a href="/neon-pulse/terms/">Terms / Koşullar</a></li>
+          <li><a href="/neon-pulse/support/">Support / Destek</a></li>
+          <li><a href="/">ttalhacoskun.com.tr</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/neon-pulse/np.js" defer></script>
+</body>
+</html>

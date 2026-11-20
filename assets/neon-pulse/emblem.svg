@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="np-title">
+  <title id="np-title">Neon Pulse emblem</title>
+  <defs>
+    <radialGradient id="np-bg" cx="0.5" cy="0.42" r="0.72">
+      <stop offset="0" stop-color="#1d0f3f"/>
+      <stop offset="0.55" stop-color="#0c0b1e"/>
+      <stop offset="1" stop-color="#070710"/>
+    </radialGradient>
+    <linearGradient id="np-edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00f0ff"/>
+      <stop offset="1" stop-color="#ff2bd6"/>
+    </linearGradient>
+    <linearGradient id="np-ship" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0" stop-color="#ff2bd6"/>
+      <stop offset="1" stop-color="#b316ff"/>
+    </linearGradient>
+    <pattern id="np-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#00f0ff" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+    <filter id="np-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="np-glow-soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <clipPath id="np-tile"><rect width="512" height="512" rx="112"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#np-tile)">
+    <rect width="512" height="512" fill="url(#np-bg)"/>
+    <rect width="512" height="512" fill="url(#np-grid)"/>
+
+    <!-- pulse ring -->
+    <circle cx="256" cy="262" r="70" fill="none" stroke="#00f0ff" stroke-width="3" opacity="0">
+      <animate attributeName="r" values="70;215" dur="2.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.55;0" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- ambient glow -->
+    <circle cx="256" cy="262" r="110" fill="#ff2bd6" opacity="0.18" filter="url(#np-glow-soft)"/>
+
+    <!-- inner hex -->
+    <polygon points="256,128 371,194 371,326 256,392 141,326 141,194" fill="none" stroke="#00f0ff" stroke-opacity="0.22" stroke-width="3"/>
+
+    <!-- outer hex -->
+    <polygon points="256,82 407,169 407,343 256,430 105,343 105,169" fill="none" stroke="url(#np-edge)" stroke-width="14" stroke-linejoin="round" filter="url(#np-glow)"/>
+
+    <!-- ship -->
+    <path d="M256 150 L340 344 L256 302 L172 344 Z" fill="#ff2bd6" fill-opacity="0.14" stroke="url(#np-ship)" stroke-width="13" stroke-linejoin="round" filter="url(#np-glow)"/>
+
+    <!-- core -->
+    <circle cx="256" cy="262" r="15" fill="#00f0ff" filter="url(#np-glow)"/>
+    <circle cx="256" cy="262" r="6" fill="#ffffff"/>
+  </g>
+</svg>

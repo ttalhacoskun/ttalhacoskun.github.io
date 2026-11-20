@@ -1,419 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Talha Coşkun Kişisel Web Site</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/favicon_io/favicon.ico"/>
-    <link rel="shortcut icon" href="assets/favicon_io/favicon.ico"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon_io/site.webmanifest">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <style>
-        .profile-pic {
-            border-radius: 50%;
-        }
-        .project-img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-        }
-        .about-details-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .about-containers {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-        }
-        .details-container {
-            margin: 0 20px;
-            text-align: center;
-        }
-    </style>
-    <!-- Google AdSense Kodu -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7658717096931763"
-    crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Talha Coşkun — Mobile Developer (iOS, Swift, SwiftUI, Flutter)</title>
+  <meta name="description" content="Talha Coşkun is a mobile developer building iOS and cross-platform apps with Swift, SwiftUI and Flutter. Portfolio, apps, projects and contact." />
+  <meta name="author" content="Talha Coşkun" />
+  <link rel="canonical" href="https://ttalhacoskun.com.tr/" />
+  <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0a0a0d" media="(prefers-color-scheme: dark)" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Talha Coşkun" />
+  <meta property="og:title" content="Talha Coşkun — Mobile Developer" />
+  <meta property="og:description" content="iOS and cross-platform apps built with Swift, SwiftUI and Flutter. Featuring Neon Pulse — Cyber Survivor." />
+  <meta property="og:url" content="https://ttalhacoskun.com.tr/" />
+  <meta property="og:image" content="https://ttalhacoskun.com.tr/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Talha Coşkun — Mobile Developer" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Talha Coşkun — Mobile Developer" />
+  <meta name="twitter:description" content="iOS and cross-platform apps built with Swift, SwiftUI and Flutter." />
+  <meta name="twitter:image" content="https://ttalhacoskun.com.tr/assets/og-image.png" />
+
+  <!-- Icons -->
+  <link rel="icon" href="/assets/favicon_io/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/favicon_io/site.webmanifest" />
+  <link rel="me" href="https://sosyal.teknofest.app/@talhacoskun" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/style.css" />
+  <script>document.documentElement.classList.add("js");</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Talha Coşkun",
+    "jobTitle": "Mobile Developer",
+    "url": "https://ttalhacoskun.com.tr/",
+    "image": "https://ttalhacoskun.com.tr/assets/profile-pic.png",
+    "alumniOf": "Istanbul University",
+    "knowsAbout": ["Swift", "SwiftUI", "Flutter", "Dart", "iOS Development", "Firebase"],
+    "sameAs": [
+      "https://github.com/ttalhacoskun",
+      "https://www.linkedin.com/in/talha-co%C5%9Fkun-a54647214/"
+    ]
+  }
+  </script>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7658717096931763" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Talha Coşkun</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="container nav" aria-label="Primary">
+      <a class="logo" href="#top">Talha<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Apps</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="profile" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-text-col">
+          <a class="hero-kicker" href="#neon-pulse"><span class="dot" aria-hidden="true"></span>Now building: Neon Pulse</a>
+          <p class="eyebrow">Hello, I'm</p>
+          <h1 id="hero-title">Talha Coşkun</h1>
+          <p class="hero-role"><strong>Mobile Developer</strong> · iOS &amp; Flutter</p>
+          <p class="hero-text">I design and build innovative, user-friendly mobile apps with Swift, SwiftUI and Flutter — functional, fast and aesthetically pleasing.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="/assets/TalhaCoskunCV(en).pdf" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>
+              Download CV
+            </a>
+            <a class="btn btn-ghost" href="#contact">Contact Info</a>
+          </div>
+          <div class="socials">
+            <a class="social-link" href="https://www.linkedin.com/in/talha-co%C5%9Fkun-a54647214/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+            </a>
+            <a class="social-link" href="https://github.com/ttalhacoskun" target="_blank" rel="noopener" aria-label="GitHub profile">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+            </a>
+            <a class="social-link" href="mailto:ttalhacoskun@gmail.com" aria-label="Send an email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="/assets/profile-pic.png" alt="Portrait of Talha Coşkun" width="508" height="520" fetchpriority="high" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Get to know more</p>
+          <h2 class="section-title" id="about-title">About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="stat-list reveal">
+            <div class="stat">
+              <div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div>
+              <div>
+                <h3>Experience</h3>
+                <p>2+ years · Mobile Development</p>
+              </div>
+            </div>
+            <div class="stat">
+              <div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></div>
+              <div>
+                <h3>Education</h3>
+                <p>Istanbul University — Bachelor’s Degree</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-text reveal">
+            <p>I am an experienced mobile application developer with over three years of expertise in Swift and SwiftUI, and one year in Flutter. Throughout my career, I have focused on creating innovative, user-friendly solutions that not only meet but exceed user expectations. My deep understanding of mobile development, combined with my creative problem-solving skills, enables me to design and implement applications that are both functional and aesthetically pleasing.</p>
+            <p>My journey in mobile development began with a passion for technology and a desire to create impactful digital experiences. Over the years, I have honed my skills in Swift and SwiftUI, mastering the art of building seamless, high-performance applications for iOS. My transition to Flutter has expanded my capabilities, allowing me to develop cross-platform solutions that cater to a wider audience.</p>
+            <p>As a developer, I am always eager to learn and embrace new technologies. This continuous learning approach keeps me at the forefront of the industry, enabling me to leverage the latest tools and frameworks to deliver cutting-edge solutions. I take pride in my ability to adapt to new challenges and find creative solutions to complex problems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / SKILLS -->
+    <section id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Explore my</p>
+          <h2 class="section-title" id="experience-title">Experience &amp; Skills</h2>
+          <p class="section-lead">The languages, frameworks and tools I use to ship mobile products.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h3>Mobile Development</h3>
+            <ul class="chips">
+              <li class="chip">Swift</li><li class="chip">SwiftUI</li><li class="chip">Flutter</li><li class="chip">Dart</li><li class="chip">Xcode</li><li class="chip">Android Studio</li>
             </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Languages &amp; Web</h3>
+            <ul class="chips">
+              <li class="chip">Python</li><li class="chip">C#</li><li class="chip">C</li><li class="chip">HTML</li><li class="chip">CSS</li><li class="chip">JavaScript</li><li class="chip">TypeScript</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Data &amp; APIs</h3>
+            <ul class="chips">
+              <li class="chip">Firebase</li><li class="chip">MySQL</li><li class="chip">MSSQL</li><li class="chip">Hive</li><li class="chip">Shared Preferences</li><li class="chip">RESTful API Integration</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Architecture &amp; Testing</h3>
+            <ul class="chips">
+              <li class="chip">MVVM</li><li class="chip">Unit Testing</li><li class="chip">UI Testing</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>DevOps &amp; Tools</h3>
+            <ul class="chips">
+              <li class="chip">Git/GitHub</li><li class="chip">Docker</li><li class="chip">Linux</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Productivity</h3>
+            <ul class="chips">
+              <li class="chip">Trello (Project Management)</li><li class="chip">Microsoft Office</li>
+            </ul>
+          </div>
         </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Talha Coşkun</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="assets/profile-pic.png" alt="Talha Coşkun profile picture" class="profile-pic" />
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Talha Coşkun</h1>
-            <p class="section__text__p2">Mobile Developer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('assets/TalhaCoskunCV(en).pdf')">Download CV</button>
-                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
-            </div>
-            <div id="socials-container">
-                <img src="assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/talha-coşkun-a54647214/'" />
-                <img src="assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/ttalhacoskun'" />
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="assets/experience.png" alt="Experience icon" class="icon" />
-                        <h3>Experience</h3>
-                        <p>2+ years <br />Mobile Development</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="assets/education.png" alt="Education icon" class="icon" />
-                        <h3>Education</h3>
-                        <p>Istanbul University - (Bachelor’s Degree)</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>
-                        I am an experienced mobile application developer with over three years of expertise in Swift and SwiftUI, and one year in Flutter. Throughout my career, I have focused on creating innovative, user-friendly solutions that not only meet but exceed user expectations. My deep understanding of mobile development, combined with my creative problem-solving skills, enables me to design and implement applications that are both functional and aesthetically pleasing.
-
-                        My journey in mobile development began with a passion for technology and a desire to create impactful digital experiences. Over the years, I have honed my skills in Swift and SwiftUI, mastering the art of building seamless, high-performance applications for iOS. My transition to Flutter has expanded my capabilities, allowing me to develop cross-platform solutions that cater to a wider audience.
-                        
-                        As a developer, I am always eager to learn and embrace new technologies. This continuous learning approach keeps me at the forefront of the industry, enabling me to leverage the latest tools and frameworks to deliver cutting-edge solutions. I take pride in my ability to adapt to new challenges and find creative solutions to complex problems.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Mobile Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Swift</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>SwiftUI</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Flutter</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Dart</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Python</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>C#</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>C</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>HTML</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>CSS</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>JavaScript</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>TypeScript</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>MySQL</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>MSSQL</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Firebase</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Git/Github</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>MVVM</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>RESTful API Integration</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Docker</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Hive</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Shared Preferences</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Unit Testing</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>UI Testing</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Xcode</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Android Studio</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Linux</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Microsoft Office</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Trello (Project Management)</h3>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="assets/project-1.png" alt="Project 1" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Namaz Vakti + İmsakiye 2024</h2>
-                    <div class="btn-container" style="margin-bottom: 15px;">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://apps.apple.com/tr/app/namaz-vakti-i-msakiye-2024/id6479539453?l=tr'">App Store</button>
-                    </div>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://play.google.com/store/apps/details?id=com.talhacoskun.ramadanapp'">Google Play</button>
-                    </div>                    
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="assets/project-2.png" alt="Project 2" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">New Direction Finder (3.0)</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ttalhacoskun/NewDirectionFinder3.0'">Github</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="assets/project-3.png" alt="Project 3" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Flappy Bird App</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ttalhacoskun/FlappyBirdApp'">Github</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="assets/project-4.png" alt="Project 4" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">TicTacToe</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ttalhacoskun/TicTacToe'">Github</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="assets/project-5.png" alt="Project 5" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Safe Finder Pro</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://apps.apple.com/tr/app/safefinderpro/id6737575931?l=tr'">AppStore</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="assets//email.png" alt="Email icon" class="icon contact-icon email-icon" />
-                <p><a href="mailto:ttalhacoskun@gmail.com">ttalhacoskun@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-                <p><a href="https://www.linkedin.com/in/talha-coşkun-a54647214/">LinkedIn</a></p>
-            </div>
-        </div>
+      </div>
     </section>
 
-    <!-- Google AdSense Reklam Birimi -->
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-7658717096931763"
-         data-ad-slot="1234567890"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+    <!-- APPS & PROJECTS -->
+    <section id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Browse my recent</p>
+          <h2 class="section-title" id="projects-title">Apps &amp; Projects</h2>
+          <p class="section-lead">Mobile apps and games for iOS and Android, plus open-source work on GitHub.</p>
+        </div>
 
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+        <!-- Featured: Neon Pulse -->
+        <article class="np-feature reveal" id="neon-pulse" aria-labelledby="np-title">
+          <div class="np-visual">
+            <img src="/assets/neon-pulse/emblem.svg" alt="Neon Pulse emblem: a neon ship inside a glowing cyan and magenta hexagon" width="300" height="300" loading="lazy" />
+          </div>
+          <div class="np-content">
+            <span class="np-tag">Featured · Mobile Game</span>
+            <h3 id="np-title">Neon Pulse <span class="np-accent">— Cyber Survivor</span></h3>
+            <p class="np-sub">60 FPS neon-geometric roguelite action game for iOS and Android.</p>
+            <ul class="np-features">
+              <li>Smooth one-finger controls</li>
+              <li>4 unique ship classes</li>
+              <li>Roguelite level-ups &amp; skill cards</li>
+              <li>Real-time online 1v1 Cyber Duel</li>
+              <li>2-player co-op operations</li>
+              <li>Weekly global tournaments</li>
+              <li>Code-synthesized synthwave music &amp; SFX</li>
+              <li>Leaderboards &amp; achievements</li>
+            </ul>
+            <ul class="np-ships" aria-label="Ship classes">
+              <li class="np-ship">Vanguard</li><li class="np-ship">Bastion</li><li class="np-ship">Phantom</li><li class="np-ship">Inferno</li>
+            </ul>
+            <div class="np-stores" aria-label="Store availability">
+              <div class="store-badge">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.77-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.83-.81-3-.79-1.55.02-2.97.9-3.77 2.28-1.6 2.79-.41 6.92 1.15 9.18.76 1.11 1.67 2.35 2.86 2.31 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.13 2.77-2.24.87-1.28 1.23-2.53 1.25-2.59-.03-.01-2.4-.92-2.42-3.66ZM14.1 5.86c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.61-2.67 1.37-.58.67-1.1 1.76-.96 2.8 1.02.08 2.06-.52 2.69-1.28Z"/></svg>
+                <div><small>Coming soon</small><span>App Store</span></div>
+              </div>
+              <div class="store-badge">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#00f0ff" d="M3.6 1.6c-.25.27-.4.68-.4 1.2v18.4c0 .52.15.93.4 1.2L13.9 12 3.6 1.6Z"/><path fill="#ff2bd6" d="M17.3 15.4 13.9 12 3.6 22.4c.38.4 1 .45 1.7.05l12-7.05Z"/><path fill="#b316ff" d="M17.3 8.6 5.3 1.55c-.7-.4-1.32-.35-1.7.05L13.9 12l3.4-3.4Z"/><path fill="#ffffff" d="m21.1 10.8-3.8-2.2-3.4 3.4 3.4 3.4 3.8-2.2c1.1-.63 1.1-1.77 0-2.4Z"/></svg>
+                <div><small>Coming soon</small><span>Google Play</span></div>
+              </div>
             </div>
+            <div class="np-actions">
+              <a class="btn btn-neon" href="/neon-pulse/">
+                View game details
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+              </a>
+              <a class="btn btn-neon-ghost" href="/neon-pulse/privacy/">Privacy Policy</a>
+              <a class="btn btn-neon-ghost" href="/neon-pulse/support/">Support</a>
+            </div>
+          </div>
+        </article>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-media"><img src="/assets/project-1.png" alt="Namaz Vakti + İmsakiye 2024 app screenshot" width="1080" height="1080" loading="lazy" /></div>
+            <div class="project-body">
+              <p class="project-meta">iOS · Open source</p>
+              <h3>Namaz Vakti + İmsakiye 2024</h3>
+              <div class="project-actions">
+                <a class="btn btn-ghost btn-sm" href="https://apps.apple.com/tr/app/namaz-vakti-i-msakiye-2024/id6479539453?l=tr" target="_blank" rel="noopener">App Store</a>
+                <a class="btn btn-ghost btn-sm" href="https://github.com/ttalhacoskun/Namaz-Vakti-imsakiye-2024" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-media"><img src="/assets/project-5.png" alt="Safe Finder Pro app screenshot" width="1080" height="1080" loading="lazy" /></div>
+            <div class="project-body">
+              <p class="project-meta">iOS</p>
+              <h3>Safe Finder Pro</h3>
+              <div class="project-actions">
+                <a class="btn btn-ghost btn-sm" href="https://apps.apple.com/tr/app/safefinderpro/id6737575931?l=tr" target="_blank" rel="noopener">App Store</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-media"><img src="/assets/project-2.png" alt="New Direction Finder 3.0 screenshot" width="1080" height="1080" loading="lazy" /></div>
+            <div class="project-body">
+              <p class="project-meta">Open source</p>
+              <h3>New Direction Finder (3.0)</h3>
+              <div class="project-actions">
+                <a class="btn btn-ghost btn-sm" href="https://github.com/ttalhacoskun/NewDirectionFinder3.0" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-media"><img src="/assets/project-3.png" alt="Flappy Bird App screenshot" width="1080" height="1080" loading="lazy" /></div>
+            <div class="project-body">
+              <p class="project-meta">Personal project</p>
+              <h3>Flappy Bird App</h3>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-media"><img src="/assets/project-4.png" alt="TicTacToe app screenshot" width="1080" height="1080" loading="lazy" /></div>
+            <div class="project-body">
+              <p class="project-meta">Open source</p>
+              <h3>TicTacToe</h3>
+              <div class="project-actions">
+                <a class="btn btn-ghost btn-sm" href="https://github.com/ttalhacoskun/TicTacToe" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div>
+            <p class="eyebrow">Get in touch</p>
+            <h2 class="section-title" id="contact-title">Contact Me</h2>
+            <p class="section-lead">Have a project, a role or a question about one of my apps? Reach out — I usually reply within a few days.</p>
+          </div>
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:ttalhacoskun@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              <div><small>Email</small><span>ttalhacoskun@gmail.com</span></div>
+            </a>
+            <a class="contact-link" href="https://www.linkedin.com/in/talha-co%C5%9Fkun-a54647214/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+              <div><small>LinkedIn</small><span>Talha Coşkun</span></div>
+            </a>
+            <a class="contact-link" href="https://github.com/ttalhacoskun" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+              <div><small>GitHub</small><span>@ttalhacoskun</span></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Google AdSense — banner -->
+    <div class="container ad-slot">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-7658717096931763"
+           data-ad-slot="7962087512"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="logo" href="#top">Talha<span>.</span></a>
+          <p style="margin-top:10px;max-width:340px">Mobile developer building iOS and cross-platform apps with Swift, SwiftUI and Flutter.</p>
+        </div>
+        <nav aria-label="Footer">
+          <h2>Navigate</h2>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Apps &amp; Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </nav>
-        <p>Copyright &#169; 2024 Talha Coşkun. All Rights Reserved.</p>
-    </footer>
-    <script src="https://ttalhacoskun.com.tr/script.js"></script>
-    <script>
-        // Save the scroll position in localStorage
-        window.addEventListener('scroll', function() {
-            localStorage.setItem('scrollPosition', window.scrollY);
-        });
+        <nav aria-label="Neon Pulse">
+          <h2>Neon Pulse</h2>
+          <ul>
+            <li><a href="/neon-pulse/">Game overview</a></li>
+            <li><a href="/neon-pulse/privacy/">Privacy Policy</a></li>
+            <li><a href="/neon-pulse/terms/">Terms of Use</a></li>
+            <li><a href="/neon-pulse/support/">Support</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-bottom">Copyright © <span data-year>2026</span> Talha Coşkun. All rights reserved.</p>
+    </div>
+  </footer>
 
-        // Restore the scroll position from localStorage
-        window.addEventListener('load', function() {
-            if (localStorage.getItem('scrollPosition') !== null) {
-                window.scrollTo(0, localStorage.getItem('scrollPosition'));
-            }
-        });
-    </script>
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7658717096931763"
-     crossorigin="anonymous"></script>
-    <!-- banner -->
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-7658717096931763"
-         data-ad-slot="7962087512"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    <a rel="me" href="https://sosyal.teknofest.app/@talhacoskun">Test</a>
+  <script src="/script.js" defer></script>
 </body>
 </html>
